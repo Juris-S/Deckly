@@ -1,13 +1,85 @@
-body {
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props/buttons.min.css";
+@import "https://unpkg.com/open-props/animations.min.css";
+
+:root{
+  --card-width: 16rem;
+  --card-height: 18rem;
+  --card-border-radius: 1rem;
+}
+
+body, html{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--surface-2);
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+.card{
+  background: var(--surface-3);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  padding: var(--spacing-2);
+  margin: var(--spacing-2);
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.1);
+  transform: translateX(-50%) translateY(-50%);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.card > .card-name{
+  font-size: var(--font-size-2);
+  font-weight: bold;
+  color: var(--text-1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.card > .card-description{
+  margin-top: var(--spacing-2);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-2);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.container {
+  width: min(100% - 2rem, 50rem);
+  margin-inline: auto;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: var(--font-mono)
 }

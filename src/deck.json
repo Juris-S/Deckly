@@ -1,0 +1,49 @@
+{ 
+    "categories": [
+        {
+            "category": "Animals",
+            "cards" : [
+                {
+                    "id": "1",
+                    "name": "Dog",
+                    "description": "A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world."
+                },
+                {
+                    "id": "2",
+                    "name": "Cat",
+                    "description": "A cat is a small, typically furry, non-sentient mammal. It is the only domesticated species in the family Felidae and is closely related to the wildcat, which is a small wild-cat."
+                },
+                {
+                    "id": "3",
+                    "name": "Bird",
+                    "description": "A bird is an animal that can fly, but does not have a backbone. It is the only animal that can fly without a body of support, and is the only animal that can fly without a wingspan."
+                },
+                {
+                    "id": "4",
+                    "name": "Fish",
+                    "description": "A fish is a cold-blooded vertebrate animal that is a member of the order Anura. It is a member of the class Actinopterygii. It is the only vertebrate animal that can swim."
+                },
+                {
+                    "id": "5",
+                    "name": "Snake",
+                    "description": "A snake is a carnivorous, non-venomous, non-reptile animal. It is a member of the order Squamata. It is a member of the suborder Agamosperms."
+                },
+                {
+                    "id": "6",
+                    "name": "Lizard",
+                    "description": "A lizard is a reptile that is a member of the order Reptilia. It is a member of the suborder Crocodylia."
+                },
+                {
+                    "id": "7",
+                    "name": "Turtle",
+                    "description": "A turtle is a reptile that is a member of the order Testudines. It is a member of the class Testudines."
+                },
+                {
+                    "id": "8",
+                    "name": "Shark",
+                    "description": "A shark is a fish that is a member of the order Carcharhiniformes. It is a member of the class Carcharhiniformes."
+                }
+            ]
+        }
+    ]
+}
